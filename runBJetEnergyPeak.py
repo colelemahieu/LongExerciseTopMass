@@ -91,10 +91,10 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         for i in xrange(0,len(leptonsP4)):
             #print(leptonsP4[i].Pt())
             if i>1: break
-            if abs(tree.Lepton_id[i]==11):
+            if abs(tree.Lepton_id[i])==11:
                 histos["e_pt"].Fill(leptonsP4[i].Pt())
                 #print(leptonsP4[i].Pt())
-            if abs(tree.Lepton_id[i]==13):
+            if abs(tree.Lepton_id[i])==13:
                 histos["mu_pt"].Fill(leptonsP4[i].Pt())
                 #print(leptonsP4[i].Pt())
 
